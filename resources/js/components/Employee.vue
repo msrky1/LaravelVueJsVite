@@ -1,5 +1,9 @@
 <template>
     <div>
+        <div>
+
+            
+        </div>
         <div class="row">
             <form @submit.prevent="save">
                 
@@ -73,6 +77,7 @@
                     </td>
                 </tr>
             </tbody>
+ 
         </table>
     </div>
 </template>
@@ -90,6 +95,8 @@ export default {
                 address: "",
                 mobile: "",
             },
+
+            durum : false
         };
     },
 
@@ -148,7 +155,7 @@ export default {
             var url = "http://localhost:8000/api/delete/" + employee.id;
 
             axios.delete(url);
-            alert("Deleted");
+         
             this.employeeView();
         },
     },

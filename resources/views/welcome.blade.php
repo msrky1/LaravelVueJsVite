@@ -12,16 +12,15 @@
 
         <!-- Styles -->
         @vite('resources/css/app.css')
+        <style> 
+        #body1 {
+
+            background-color: black
+        }
+        </style>
     </head>
-    <body class="antialiased">
-       <div id="app"> 
-
-       </div>
-      
-       @vite('resources/js/app.js')
-       {{-- <script type="{{ asset}}" > </script> --}}
-
-       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-
+    <body class="antialiased" id="body1">
+     
+        
     </body>
 </html>
